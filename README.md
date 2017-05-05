@@ -1,5 +1,5 @@
 <h1>Burger</h1>
-<p>A restaurant app that lets user input the names of burgers they'd like to eat.</p>
+<p>A restaurant app that lets the user input the names of burgers they'd like to eat.</p>
 
 <b>Technologies Used: </b>
 <ul>
