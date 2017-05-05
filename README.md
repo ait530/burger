@@ -1,5 +1,5 @@
 <h1>Burger</h1>
-<p>A restaurant app that lets the user input the names of burgers they'd like to eat.</p>
+<p>A restaurant CLI application that lets the user input the names of burgers they'd like to eat. Uses MySQL as a database and handlebar to serve the html.</p>
 
 <b>Technologies Used: </b>
 <ul>
