@@ -9,5 +9,5 @@ CREATE TABLE burgers
   id int NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
   devoured INTEGER(11) NOT NULL,
-  date 'YYYY-MM-DD HH:MM:SS'
-);
+  TIMESTAMP, NOT NULL
+);  
