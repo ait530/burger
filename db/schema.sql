@@ -1,14 +1,16 @@
 -- Creates burgers_db database
-CREATE DATABASE burgers_db;
+CREATE DATABASE IF NOT EXISTS burgers_db;
 
 -- Uses burgers_db
 USE burgers_db; 
 
-CREATE TABLE burgers 
-(
-  id int NOT NULL AUTO_INCREMENT,
-  burger_name varchar(255) NOT NULL,
-  devoured BOOLEAN DEFAULT false,
-  date TIMESTAMP, NOT NULL,
+--Burgers table with the following:
+CREATE TABLE burgers (
+  id INT(15) AUTO_INCREMENT NOT NULL,
+  burger_name VARCHAR(55) NOT NULL,
+  devoured BOOL DEFAULT 0,
+  date TIMESTAMP,
   PRIMARY KEY (id)
-);    
+);
+
+
