@@ -1,9 +1,12 @@
+// Dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
+// http://localhost:3000 to access this computer/test this software
 var port = 3000;
 
+// Set express web application framework variable
 var app = express();
 
 

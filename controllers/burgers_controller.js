@@ -9,9 +9,9 @@ var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  cat.all(function(data) {
+  burger.all(function(data) {
     var hbsObject = {
-      cats: data
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -19,23 +19,23 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-  cat.create([
-    "name", "sleepy"
+  burger.create([
+    "name", "baconBurger"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.name, req.body.baconBurger
   ], function() {
     res.redirect("/");
   });
 });
 
 router.put("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+  var burgerType = "id = " + req.params.id;
 
-  console.log("condition", condition);
+  console.log("burgerType", condition);
 
-  cat.update({
-    sleepy: req.body.sleepy
-  }, condition, function() {
+  burger.update({
+    baconBurger: req.body.baconBurger
+  }, burgerType, function() {
     res.redirect("/");
   });
 });
